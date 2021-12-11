@@ -1,10 +1,16 @@
+let sound;
 let cells = [];
+
+function preload(){
+  sound = loadSound(big_bubble.wav);
+}
 
 function setup() {
   createCanvas(400, 400);
   for (let i = 0; i < 20; i++) {
     cells[i] = new Cell();
   }
+  sound.play();
 }
 
 function draw() {
