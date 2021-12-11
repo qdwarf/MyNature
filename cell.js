@@ -5,7 +5,7 @@ class Cell {
     this.pos3 = createVector(random(width), random(height));
     this.vel = createVector();
     this.acc = createVector();
-    this.topSpeed = 1.2;
+    this.speed = 1.3;
     this.s = random(10, 25);
     this.r = this.s / 2;
     this.isThem = false;
@@ -23,14 +23,14 @@ class Cell {
     }
 
     this.vel.add(this.acc);
-    this.vel.limit(this.topSpeed);
+    this.vel.limit(this.speed);
     this.pos1.add(this.vel);
     this.pos2.add(this.vel);
     this.pos3.add(this.vel);
   }
 
   display() {
-    fill(20, 225, 70);
+    fill(20, 225, 80);
     noStroke();
 
     ellipse(this.pos1.x, this.pos1.y, this.s, this.s);
