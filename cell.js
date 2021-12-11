@@ -106,8 +106,4 @@ class Cell {
   mousePressed() {
     this.isThem = true;
   }
-
-  mouseReleased() {
-    this.isThem = false;
-  }
 }

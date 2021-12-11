@@ -21,9 +21,3 @@ function mousePressed() {
     cells[i].mousePressed();
  }
 }
-
-function mouseReleased() {
-  for (let i = 0; i < cells.length; i++) {
-    cells[i].mouseReleased();
-  }
-}
